@@ -1,0 +1,10 @@
+label {
+    width: 50%;
+    padding-right: 10em;
+    position: relative;
+}
+
+.inputField {
+    width: 25%;
+    position: relative;
+}

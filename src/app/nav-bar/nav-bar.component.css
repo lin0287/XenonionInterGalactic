@@ -1,0 +1,39 @@
+ul {
+    padding: 0%;
+    margin: 0%;
+    background-color: #BBD3F1;
+    border: none;
+    height: 100%;
+    position: fixed;
+    width: 200px;
+}
+
+button {
+    font-size: 24px;
+    color: black;
+    background-color: #BBD3F1;
+    border: none;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+li {
+    text-align: center;
+}
+
+button:hover{
+    background-color: white;
+    color: #23395B;
+}
+
+.active {
+    background-color: #598DC0;
+}
+
+.logoImage {
+    height: auto;
+    width: 200px;
+    position: fixed;
+    bottom: 0cm;
+    left: 0cm;
+}

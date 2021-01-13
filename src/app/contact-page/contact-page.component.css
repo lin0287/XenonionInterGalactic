@@ -1,0 +1,72 @@
+.contactImage {
+    border: 18px solid #BBD3F1;
+
+    height: 100%;
+    width: 100%;
+}
+
+.pictureRowSettings {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+h1 {
+    margin: 18px;
+    margin-top: 0%;
+}
+
+p {
+    margin: 18px;
+}
+
+.purpleOverlay {
+    background-color: #2F3159;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  border: 18px solid #BBD3F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F3159;
+  width: 100%;
+  height: 100%;
+}
+
+
+.imageContainer {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+
+.imageContainer:hover .image {
+  opacity: 0.3;
+}
+
+.imageContainer:hover .middle {
+  opacity: 0.8;
+}
+
+.contactMethod {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
