@@ -8,3 +8,34 @@ label {
     width: 25%;
     position: relative;
 }
+
+.title {
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    width: 60%;
+    height: 90px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}

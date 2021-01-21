@@ -1,39 +1,14 @@
-<div class="card">
-    <div class="card-body">
-      <form [formGroup]="angForm" novalidate>
-        <div>
-          <label>Product Name</label>
-          <input type="text" class="inputField" cols = "50" formControlName="ProductName" #ProductName />
-        </div>
-        <div *ngIf="angForm.controls['ProductName'].invalid && (angForm.controls['ProductName'].dirty || angForm.controls['ProductName'].touched)">
-          <div *ngIf="angForm.controls['ProductName'].errors.required">
-            Product Name is required.
-          </div>
-        </div>
-        <div>
-          <label>Product Description </label>
-          <textarea class = "inputField" rows = 7 cols = "50" formControlName="ProductDescription" #ProductDescription></textarea>
-          <!-- (COLS: ACROSS) (ROWS: DOWN) -->
-        </div>
-        <div *ngIf="angForm.controls['ProductDescription'].invalid && (angForm.controls['ProductDescription'].dirty || angForm.controls['ProductDescription'].touched)">
-          <div *ngIf="angForm.controls['ProductDescription'].errors.required">
-            Product Description is required.
-          </div>
-        </div>
-        <div>
-          <label>Product Price</label>
-          <input type="text" class = "inputField"  cols = "50" formControlName="ProductPrice" #ProductPrice />
-        </div>
-        <div *ngIf="angForm.controls['ProductPrice'].invalid && (angForm.controls['ProductPrice'].dirty || angForm.controls['ProductPrice'].touched)">
-          <div *ngIf="angForm.controls['ProductPrice'].errors.required">
-            Product Price is required.
-          </div>
-        </div>
-        <div>
-          <button type="submit" [disabled]="angForm.pristine || angForm.invalid" >
-            Create Product
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<h1>Request An Interplanetary Delivery</h1>
+<br>
+
+<label class="title"><i class="material-icons">person</i>Sender</label>
+<input type="text" id="senderID" name="senderName" placeholder="Sender">
+
+<label class="title"><i class="material-icons">person</i>Receiver</label>
+<input type="text" id="receiverID" name="receiverName" placeholder="Receiver">
+
+<label class="title"><i class="material-icons">description</i>Description</label>
+<textarea id="descriptionID" name="descriptionName" >Description</textarea>
+<!--<input class="decriptionField" id="descriptionID" name="descriptionName" placeholder="Description">-->
